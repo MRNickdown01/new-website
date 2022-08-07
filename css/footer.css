@@ -1,0 +1,55 @@
+.footer{
+    position: relative;
+    min-width: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/work7.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.footer .media h3{
+      font-size:50px;
+      font-weight: bold;
+      color: rgba(19, 237, 154, 0.967);
+      font-family: 'Courier New', Courier, monospace;
+}
+
+.footer .icon {
+    font-size: 60px;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+    gap: 15px;
+}
+ /* .footer .icon i{
+    background-color: black;
+    border-radius: 5rem;
+    border: 1px solid grey;
+    padding: 12px;
+} */
+.footer .icon span:hover a{
+    transition: 0.5s;
+    color: white;
+}
+.copy{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(240, 134, 5);
+}
+@media only  screen and (max-width:900px){
+    .footer{
+        display: flex;
+        position: relative;
+        min-width: 100%;
+    }
+    .footer .media h3{
+        padding-left: 5rem;
+    }
+}

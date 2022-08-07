@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/image3.jpg);
+}
+.about img{
+    height:30%;
+    width: 30%;
+    border-radius: 2rem;
+}
+.about img:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.hp{
+    width: 420px;
+}
+.about-data{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.hp h3{
+    font-size: 5rem;
+    font-family:"Baloo Da 2",serif;
+    color: rgb(221, 155, 0);
+    margin-top: 3rem;
+    animation: Moveh3 1.5s;
+    
+}
+.hp p{
+    font-size: 2.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff;
+    margin-top: 2.5rem;
+}
+.btn-get{
+    border: 2rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    margin-top: 3rem;
+    color: black;
+    background-color: rgb(0, 110, 255);
+}
+.btn-get:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+@keyframes Moveh3{
+    0%{
+        transform: translateX(40rem)rotateX(-20deg);
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+@media screen and (max-width:768px){
+    .about-data{
+        display: block;
+    }
+           .about img{
+            /* display: flex; */
+            /* margin-top: 28rem; */
+            width: 22rem;
+            margin-left: 8rem;
+          }
+          .hp{
+            width:auto;
+          }
+          .hp h3{
+             margin: 1rem 1.2rem;
+             font-size: 5rem;
+          } 
+          .hp p{
+             /* margin-left: -11rem; */
+            display:flex;
+            margin-top:-1rem;
+            align-items: center;
+            font-size: 3rem;
+            margin-left: 2rem;
+          }
+
+}
+    
